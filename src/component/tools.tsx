@@ -162,7 +162,7 @@
 // export default Tools;
 
 
-import "./Tools.css";
+import "./tools.css";
 
 const Tools = () => {
   const platforms = [
