@@ -2,7 +2,7 @@ import "./result.css";
 
 import calcy from "../media/21.svg";
 import graphImg from "../media/result-anylt.png";
-import tableImg from "../media/result-anylt2.png";
+import tableImg from "../media/Result-anylt2.png";
 import star from "../media/25.svg";
 import piggy from "../media/22.svg";
 
