@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.get-in-touch-container {
+  min-height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 150px;
+}
+
+.email-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+
+.email-icon img {
+  width: 150px;
+  height: 150px;
+  opacity: 0.7;
+}
+
+.title {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #1a1a2e;
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c757d;
+  text-align: center;
+  line-height: 1.2;
+  margin: -30px 0px 28px 0;
+  max-width: 600px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-input {
+  flex: 1;
+  padding: 20px 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: #e9ecef;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c757d;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #6c757d;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.form-input:focus {
+  background-color: #dee2e6;
+  transform: translateY(-2px);
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 20px 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: #e9ecef;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c757d;
+  outline: none;
+  resize: vertical;
+  min-height: 140px;
+  transition: all 0.3s ease;
+}
+
+.form-textarea::placeholder {
+  color: #6c757d;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.form-textarea:focus {
+  background-color: #dee2e6;
+  transform: translateY(-2px);
+}
+
+.send-button {
+  width: 100%;
+  padding: 20px 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: #2c5bff;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.send-button:hover {
+  background-color: #1e4bef;
+  transform: translateY(-2px);
+}
+
+.send-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .get-in-touch-container {
+    padding: 30px 16px;
+  }
+  
+  .title {
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contact-form {
+    gap: 16px;
+  }
+  
+  .email-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 32px;
+  }
+  
+  .email-icon img {
+    width: 50px;
+    height: 50px;
+  }
+}

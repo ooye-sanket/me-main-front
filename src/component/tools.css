@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+
+/* .tools-section::before {
+  content: '';
+  position: absolute;
+  left: 60%;
+  top: 60%;
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 50% 40%,
+            rgba(59,92,255,0.25) 0%,
+            rgba(59,92,255,0.15) 25%,
+            rgba(59,92,255,0.05) 45%,
+            transparent 70%);
+  filter: blur(120px);
+  z-index: -1;
+  pointer-events: none;
+} */
+
+
+.tools-section {
+  padding: 20px 10px;
+  background: linear-gradient(180deg, #e5e5fc,);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.client-results-start-line {
+  border: none;
+  height: 2px;
+  background: radial-gradient(ellipse at center, rgba(90, 105, 255, 0.2), rgba(90, 105, 255, 0));
+  box-shadow: 0 0 15px rgba(90, 105, 255, 0.15);
+  width: 85%;
+  margin: -15px auto 0.1rem;
+}
+.client-results-start-line1 {
+  border: none;
+  height: 2px;
+  background: radial-gradient(ellipse at center, rgba(90, 105, 255, 0.2), rgba(90, 105, 255, 0));
+  box-shadow: 0 0 15px rgba(90, 105, 255, 0.15);
+  width: 85%;
+  margin: 0 auto 5rem;
+}
+
+
+
+.tools-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tools-title {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #1a1a2e;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+
+.tools-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.tools-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tool-name {
+  background-color: #0400e9;
+  color: white;
+  padding: 15px 36px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(4, 0, 233, 0.2);
+ 
+}
+
+.tool-name span {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tool-icon {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.tool-item:hover .tool-name {
+  background-color: #0300c7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(4, 0, 233, 0.3);
+}
+
+.tool-item:hover .tool-icon {
+  transform: translateY(-2px);
+  border-color: #0400e9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.client-results-end-line {
+  border: none;
+  height: 2px;
+  background: radial-gradient(ellipse at center, rgba(90, 105, 255, 0.2), rgba(90, 105, 255, 0));
+  box-shadow: 0 0 15px rgba(90, 105, 255, 0.15);
+  width: 95%;
+  margin: 2rem auto 0;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .tools-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .tools-row {
+    gap: 15px;
+  }
+  
+  .tool-item {
+    gap: 10px;
+  }
+  
+  .tool-name {
+    padding: 10px 20px;
+  }
+  
+  .tool-name span {
+    font-size: 14px;
+  }
+  
+  .tool-icon {
+    width: 42px;
+    height: 42px;
+  }
+} */
+
+@media (max-width: 768px) {
+  .tools-grid {
+    display: block;
+    overflow-x: auto;
+    padding: 0 10px;
+    
+  }
+  
+  .tools-row {
+    display: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    min-width: max-content;
+    padding-bottom: 10px;
+  }
+  
+  .tool-item {
+    flex-shrink: 0;
+  }
+  
+  .tool-name {
+    min-width: max-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-section {
+    padding: 30px 15px;
+  }
+  
+  .tools-title {
+    font-size: 28px;
+  }
+  
+  .tools-row {
+    gap: 12px;
+  }
+  
+  .tool-name {
+    padding: 8px 16px;
+  }
+  
+  .tool-name span {
+    font-size: 13px;
+  }
+  
+  .tool-icon {
+    width: 38px;
+    height: 38px;
+  }
+}

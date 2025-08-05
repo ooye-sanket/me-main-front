@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+
+
+
+
+.client-results-container {
+  background: transparent;
+  position: relative;
+  min-height: 150px;
+  padding: 4rem 1rem;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* .gradient-bg1{
+  position: relative;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  transform: translateX(-50%);
+  background: radial-gradient(circle at 50% 40%,
+            rgba(59,92,255,0.25) 0%,
+            rgba(59,92,255,0.15) 25%,
+            rgba(59,92,255,0.05) 45%,
+            transparent 70%);
+  filter: blur(120px);
+  z-index: -100;
+  pointer-events: none;
+} */
+
+.client-results-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Header Styles */
+.client-results-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.client-results-label {
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.client-results-title {
+  font-size: 300%;
+  font-weight: 1000;
+  color: #111827;
+  line-height: 1.1;
+}
+
+.client-results-subtitle {
+  position: relative;
+  left: 150px;
+  top: 150px;
+  font-size: 1.25rem;
+  text-align: left;
+  color: #6b7280;
+}
+
+.highlight {
+  color: #6b7280;
+}
+
+.big-highlight {
+  /* font-family: 'Poppins', sans-serif; */
+  font-size: 120px;
+  font-weight: 900;
+  color: #3b5cff;
+  margin-top: 0.3rem;
+}
+
+.analytics-images {
+  display: flex;
+  position: relative;
+  gap: 5rem;
+  margin-top: -10px;
+}
+
+.analytics-images .analytic-img {
+  max-width: 100%;
+  margin-left: 35%;
+  height: 320px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  position: relative;
+  margin-top: -3rem;
+}
+
+.analytics-images .analytic1-img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: -88%;
+  margin-top: 10rem;
+  position: relative;
+}
+
+
+.analytics-images .star-img {
+  max-width: 100%;
+  height: 70px;
+ 
+  
+  margin-left: -37%;
+  margin-top: -3rem;
+  position: relative;
+}
+
+
+.analytics-images .calcy-img {
+  max-width: 100%;
+  height: 100px;
+  margin-left: -37%;
+  margin-top: -3rem;
+  position: relative;
+}
+.analytics-images .piggy-img{
+  height: 120px;
+  margin-left: 780px;
+  margin-top: 350px;
+}
+
+.centered-results-block{
+    margin-top: -9rem;
+}
+
+
+
+
+
+
+.client-results-footer {
+  position: relative;
+  left: 750px;
+  top: -170px;
+  font-size: 1.2rem;
+  text-align: left;
+  color: #6b7280;
+}
+
+
+.highlight1 {
+  color: #6b7280;
+}
+
+.big-highlight1 {
+  font-size: 110px;
+  font-weight: 900;
+  color: #3b5cff;
+  margin-top: 0.5rem;
+}
+
+.client-results-end-line {
+  border: none;
+  height: 2px;
+  background: radial-gradient(ellipse at center, rgba(90, 105, 255, 0.2), rgba(90, 105, 255, 0));
+  box-shadow: 0 0 15px rgba(90, 105, 255, 0.15);
+  width: 85%;
+  margin: -5rem auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================================
+ *  PHONES & SMALL TABLETS  (≤ 768 px)
+ * ====================================================== */
+@media (max-width: 768px){
+
+  /* ─── Intro headline ─────────────────────────────── */
+  .client-results-title{
+    font-size: 1.8rem;              /* ≈ 28-30 px */
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  /* ─── “Increase qualified leads by 52 %” block ───── */
+  .client-results-subtitle{
+    position: static;               /* drop offsets      */
+    margin: 2rem 0 0;
+    text-align: center;
+  }
+  .client-results-subtitle .line{
+    font-size: 1.1rem;
+  }
+  .big-highlight{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(3rem,14vw,4.5rem);   /* 48-72 px fluid */
+    font-weight: 900;
+    line-height: 1;
+    z-index: 2;                     /* stay above icons  */
+  }
+
+  /* ─── Screenshots stack vertically ───────────────── */
+  .analytics-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
+  .analytic-img,
+  .analytic1-img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 !important;           /* wipe old offsets  */
+    border-radius: 0.5rem;
+  }
+  .analytic1-img{ margin-top: 2rem; }
+
+  /* ─── Decorative icons overlay nicely ────────────── */
+  .analytics-images .star-img,
+  .analytics-images .calcy-img,
+  .analytics-images .piggy-img{
+    position: absolute;
+    z-index: 3;
+    height: auto;
+  }
+  .star-img{   width: 14vw; top: -28px;  right: 10%; }
+  .calcy-img{  width: 18vw; top: -42px;  left: -6%; }
+  .piggy-img{  width: 20vw; bottom: -32px; right: -4%; }
+
+  /* ─── Bottom KPI (“25 %”) block ─────────────────── */
+  .client-results-footer{
+    position: static;
+    margin-top: 6rem;
+    text-align: center;
+  }
+  .line1, .highlight1{ font-size: 1.1rem; }
+  .big-highlight1{
+    font-size: clamp(3rem,14vw,4.5rem);
+    font-weight: 900;
+    color: #3b5cff;
+    line-height: 1;
+  }
+
+  /* ─── Remove desktop pull-up ─────────────────────── */
+  .centered-results-block{ margin-top: 0; }
+}
+
+
+
+.mobile-footer  { display: none; }
+.desktop-footer { display: block; }
+
+/* ----------  phones & small tablets  ---------- */
+@media (max-width: 768px){
+  /* swap visibility */
+  .mobile-footer  { 
+    display: block;             /* now visible             */
+    text-align: center; 
+    margin-top: 1.5rem;         /* space below graph        */
+  }
+  .desktop-footer { display: none; }
+
+  /* nudge the second screenshot down a little */
+  .analytic1-img { margin-top: -2rem !important; }
+}
+
+@media (max-width: 768px) {
+  .client-results-end-line {
+    width: 90%;
+    margin-top: 3rem;
+    background: linear-gradient(to right, rgba(90, 105, 255, 0.15), rgba(255, 255, 255, 0.05), rgba(90, 105, 255, 0.15));
+    box-shadow: none;
+  }
+}

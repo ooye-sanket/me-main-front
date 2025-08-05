@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+/* Add this to App.css */
+body, html {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .floating-icon {
+    max-width: 100vw;
+  }
+
+  .icon-1, .icon-3, .icon-10 {
+    left: 0;
+    right: 0;
+  }
+}
